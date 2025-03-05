@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //Declarando as variáveis e criando as instancias do objetos.
         Scanner menu = new Scanner(System.in);
         int opcao = 0;
         ContaBancaria conta = new ContaCorrente();

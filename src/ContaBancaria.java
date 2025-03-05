@@ -1,16 +1,18 @@
 import java.util.Scanner;
 
 public class ContaBancaria {
-    //Declarando variáveis
+    //Declarando variáveis.
     private String cliente;
     private String tipoConta;
     protected double saldo;
 
+    //Método para definir as informações do clientes.
     public void defineInformacoesDoCliente(String cliente, String tipoConta){
         this.cliente = cliente;
         this.tipoConta = tipoConta;
     }
 
+    //Método para exibir as informações do clientes.
     public void exibeInformacoes(){
         //Exibindo as informações do cliente.
         System.out.println("**************************************************");
@@ -21,6 +23,7 @@ public class ContaBancaria {
         System.out.println("**************************************************");
     }
 
+    //Métodos para cada ação do menu.
     public void consultaSaldo(){
         //Primeira opção, exibe o saldo do cliente.
         System.out.println(String.format("\nO saldo atual é R$%.2f", saldo));
